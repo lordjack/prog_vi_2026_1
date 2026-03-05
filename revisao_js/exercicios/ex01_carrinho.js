@@ -1,3 +1,25 @@
+/*
+ * Exercício 01 — Produto e Carrinho
+ *
+ * Crie a classe Produto com os atributos: nome, preco e estoque.
+ *
+ * Depois, crie a classe Carrinho que tenha:
+ *   - Um atributo cliente (objeto do tipo Pessoa)
+ *   - Um atributo itens (array de objetos do tipo Produto)
+ *
+ * Implemente os métodos:
+ *   - adicionarProduto(produto)  → adiciona um produto ao array itens
+ *   - calcularTotal()            → retorna a soma dos preços de todos os itens
+ *   - exibirResumo()             → exibe o nome e telefone do cliente
+ *                                  e lista todos os produtos com seus preços e o total
+ *
+ * No programa principal:
+ *   - Crie pelo menos 2 objetos Pessoa como clientes
+ *   - Crie pelo menos 3 objetos Produto
+ *   - Monte um carrinho para cada cliente com produtos diferentes
+ *   - Exiba o resumo de cada carrinho
+ */
+
 import { Pessoa } from "../pessoa.js";
 
 // Classe Produto com 3 atributos

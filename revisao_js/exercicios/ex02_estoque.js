@@ -1,3 +1,22 @@
+/*
+ * Exercício 02 — Verificação de Estoque
+ *
+ * Evolua o exercício anterior adicionando à classe Produto o método:
+ *   - verificarEstoque(quantidade) → lança uma exceção (throw) caso
+ *     a quantidade solicitada seja maior que o estoque disponível.
+ *     Caso contrário, exibe uma mensagem informando que o estoque está OK.
+ *
+ * Atualize o método adicionarProduto(produto, quantidade) da classe Carrinho
+ * para que ele receba também a quantidade desejada e chame verificarEstoque
+ * antes de adicionar o item ao carrinho.
+ *
+ * No programa principal:
+ *   - Tente adicionar produtos ao carrinho usando try/catch
+ *   - Inclua pelo menos um caso onde a quantidade supera o estoque
+ *     (para que a exceção seja lançada e capturada)
+ *   - Ao final, exiba o resumo do carrinho com os itens adicionados com sucesso
+ */
+
 import { Pessoa } from "../pessoa.js";
 
 // Produto agora valida estoque antes de vender

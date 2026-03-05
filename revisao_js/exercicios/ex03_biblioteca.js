@@ -1,3 +1,27 @@
+/*
+ * Exercício 03 — Sistema de Biblioteca
+ *
+ * Crie a classe Livro com os atributos: titulo, autor e disponivel (boolean).
+ *   - O livro começa sempre disponível (disponivel = true)
+ *
+ * Crie a classe Emprestimo com os atributos:
+ *   - pessoa  → objeto do tipo Pessoa (quem está pegando o livro)
+ *   - livro   → objeto do tipo Livro  (qual livro está sendo emprestado)
+ *
+ * Implemente os métodos:
+ *   - realizarEmprestimo() → se o livro NÃO estiver disponível, lança uma exceção.
+ *                            Caso contrário, muda disponivel para false
+ *                            e exibe uma mensagem de confirmação.
+ *   - devolverLivro()      → muda disponivel de volta para true
+ *                            e exibe uma mensagem de devolução.
+ *
+ * No programa principal:
+ *   - Crie 2 leitores (objetos Pessoa) e 2 livros (objetos Livro)
+ *   - Simule o fluxo: empréstimo → tentativa de novo empréstimo do mesmo livro
+ *     → devolução → empréstimo bem-sucedido novamente
+ *   - Use try/catch em cada operação de empréstimo
+ */
+
 import { Pessoa } from "../pessoa.js";
 
 class Livro {

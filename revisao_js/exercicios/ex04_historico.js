@@ -1,3 +1,30 @@
+/*
+ * Exercício 04 — Histórico de Conta Bancária (Desafio)
+ *
+ * Expanda o sistema de contas bancárias visto em aula:
+ *
+ * Crie a classe Conta com associação a Pessoa (atributo titular) e os atributos:
+ *   - saldo     → número (começa em 0)
+ *   - historico → array (começa vazio)
+ *
+ * Implemente os métodos:
+ *   - depositar(valor)              → soma o valor ao saldo e registra no historico
+ *   - sacar(valor)                  → lança exceção se saldo insuficiente;
+ *                                     caso contrário, subtrai e registra no historico
+ *   - transferir(outraConta, valor) → usa sacar e depositar internamente;
+ *                                     registra a operação no historico de ambas as contas
+ *                                     informando o nome do outro titular
+ *   - exibirSaldo()                 → exibe o nome do titular e o saldo atual
+ *   - exibirHistorico()             → lista todas as operações registradas
+ *                                     e o saldo atual no final
+ *
+ * No programa principal:
+ *   - Crie 2 objetos Pessoa e 2 objetos Conta
+ *   - Realize depósitos, saques e uma transferência entre as contas
+ *   - Inclua pelo menos um saque com saldo insuficiente (use try/catch)
+ *   - Ao final, exiba o histórico completo das duas contas
+ */
+
 import { Pessoa } from "../pessoa.js";
 
 // Conta estendida com histórico de operações
