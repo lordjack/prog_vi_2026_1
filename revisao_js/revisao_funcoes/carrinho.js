@@ -27,4 +27,17 @@ export class Carrinho {
     });
     console.log("Total: R$" + this.calcularTotal().toFixed(2));
   }
+
+  /*
+    faça o filtro dos produtos por cliente através do preço
+  */
+  filtrarProduto(valorMin = 0, valorMax =0) {
+    let filtrados = this.itens.filter(function (item) {
+      item.preco >= valorMin && item.preco <= valorMax;
+    });
+
+    filtrados.map(function (item) {
+      console.log(item.nome + " - R$" + item.preco);
+    });
+  }
 }

@@ -25,3 +25,5 @@ let ap = notas.filter(function (item) {
 ap.map(function (item) {
   console.log("Nome: " + item.nome + " - Nota:" + item.nota);
 });
+
+
